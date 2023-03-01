@@ -1,0 +1,114 @@
+body{
+    background: lightgreen;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: coral;
+}
+
+
+#context {
+    text-align: center;
+    color: goldenrod;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#bouton {
+    text-align: center;
+    color: darkcyan;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 1rem;
+    background: chocolate;
+    position: absolute; 
+    top: 150px; 
+    right: 44%;
+    white-space: nowrap;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    animation-duration: .5s;
+    animation-name: clignoter;
+    animation-iteration-count: infinite;
+    transition: none;
+ }
+
+ @keyframes clignoter {
+   0%   { opacity:1; }
+   40%   {filter: invert(1); }
+   100% { opacity:1; }
+ }
+
+#years {
+    list-style-type: none;
+    display: flex;
+    display: list-item;
+}
+
+.year{
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    background: bisque;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    animation: fadeOut 1s ease-out;
+}
+
+.year:hover{
+    filter: invert(1);
+    animation: fadeIn 1s ease-in;
+    border-image-width: 20px;
+    image-orientation: 180rad;
+}
+
+@keyframes fadeOut{
+    0% {opacity:1;};
+    100%{opacity:0;};
+}
+
+@keyframes fadeIn{
+    0% {opacity:0;};
+    100%{opacity:1;};
+}
+
+
+#LM1{
+    position: absolute; 
+    top: 350px; 
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 20s linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#LM2{
+    position: absolute; 
+    top: 550px; 
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 14s linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+#clickLM1{
+    text-decoration: none;
+    color:darkcyan;
+}
+
+#clickLM2{
+    text-decoration: none;
+    color: chocolate;
+}
+
+@-webkit-keyframes rightThenLeft {
+    0%   {left: 0%;}
+    50%  {left: 100%;}
+    100% {left: 0%;}
+}

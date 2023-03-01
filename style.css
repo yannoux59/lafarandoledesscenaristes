@@ -1,0 +1,134 @@
+body{
+    background: lightgreen;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: coral;
+}
+
+
+#context {
+    text-align: center;
+    color: goldenrod;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#person {
+    list-style-type: none;
+    display: flex;
+    display: list-item;
+    /* padding: 10px;  */
+}
+
+.person{
+    display: flex;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1rem;
+    height : 125px;
+    width: 125px;
+    text-align: center;
+    background: darkred;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    animation: fadeOut 1s ease-out;
+}
+
+.person:hover{
+    filter: invert(1);
+    animation: fadeIn 1s ease-in;
+    border-image-width: 20px;
+    image-orientation: 180rad;
+}
+
+@keyframes fadeOut{
+    0% {opacity:1;};
+    100%{opacity:0;};
+}
+
+@keyframes fadeIn{
+    0% {opacity:0;};
+    100%{opacity:1;};
+}
+
+
+
+.imgsize{
+    width: 125px;
+    height: 125px;
+}
+
+#enzo{
+    position: absolute; 
+    top: 130px; 
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 20s linear;
+    -webkit-animation-iteration-count: infinite;
+}
+
+
+#estelle{
+    position: absolute;
+    top: 250px;
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 17s linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0s;
+}
+
+#leonie{
+    position: absolute;
+    top: 370px;
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 22s linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0s; 
+}
+
+#margot{
+    position: absolute;
+    top: 490px;
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 15s linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0s;
+}
+
+#imgmargot{
+    width: 125px;
+    overflow: hidden;
+    margin: 0px 0px 0px 0px;
+}
+
+#yann{
+    position: absolute;
+    top: 610px;
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 25s linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0s;
+}
+
+#imgyann {
+    width: 125px;
+    overflow: hidden;
+}
+
+#valentin{
+    position: absolute;
+    top: 730px;
+    white-space: nowrap;
+    -webkit-animation: rightThenLeft 19s linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-delay: 0s;
+}
+
+@-webkit-keyframes rightThenLeft {
+    0%   {left: 0%;}
+    50%  {left: 100%;}
+    100% {left: 0%;}
+}
